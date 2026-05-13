@@ -1,0 +1,46 @@
+.navbar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo {
+  width: 150px;
+}
+.navbar-menu {
+  justify-content: space-between;
+  align-items: center;
+ gap: 20px;
+  display: flex;
+  list-style-type:none;
+ font-size: 18px;
+}
+.navbar-right{
+    display:flex;
+    align-items: center;
+    gap: 40px;
+}
+.navbar button{
+    background: transparent;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid gray;
+}
+.search-icon{
+    position: relative;
+}
+.search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: red;
+    border-radius: 5px;
+    top: -6px;
+    right: -6px;
+}
