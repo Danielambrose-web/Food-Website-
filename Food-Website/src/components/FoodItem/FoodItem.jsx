@@ -1,11 +1,29 @@
-import { assets     } from "../../assets/assets";
+import { useState } from "react";
+import { assets } from "../../assets/assets";
 import "./FoodItem.css";
 
 const FoodItem = ({ id, description, name, price, image }) => {
+  const [itemCount, setItemCount] = useState(0);
+  
+
   return (
     <div className="food-item">
       <div className="food-item-img-container">
         <img className="food-item-img" src={image} alt="" />
+        {!itemCount ? (
+          <img
+            className="add"
+            onClick={() => setItemCount((prev) => prev + 1)}
+            src={assets.add_icon_green}
+            alt=""
+          />
+        ) : (
+          <div className="food-item-container">
+            <img  onClick={()=>setItemCount(prev=>prev- 1)} src={assets.remove_icon_red} alt="" />
+            <p>{itemCount}</p>
+            <img  onClick={()=>setItemCount(prev=>prev+1)} src={assets.add_icon_green} alt="" />
+          </div>
+        )}
       </div>
       <div className="food-item-info">
         <div className="food-item-rating">
