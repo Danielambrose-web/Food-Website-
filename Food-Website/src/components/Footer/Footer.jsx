@@ -1,9 +1,9 @@
 import { assets } from "../../assets/assets";
-import './Footer.css';
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="div" id="footer">
+    <div id="footer">
       <div className="footer-left">
         <img src={assets.logo} alt="" />
         <p>
@@ -19,17 +19,17 @@ const Footer = () => {
       <div className="footer-center">
         <h1>Mr. Smart</h1>
         <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Contact</li>
-            <li>FAQ</li>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact</li>
+          <li>FAQ</li>
         </ul>
       </div>
       <div className="footer-right">
         <h2>Get in Touch</h2>
         <ul>
-            <li>+234 704 625 3879</li>
-            <li>info@mrsmart.com</li>
+          <li>+234 704 625 3879</li>
+          <li>info@mrsmart.com</li>
         </ul>
       </div>
       <hr />
